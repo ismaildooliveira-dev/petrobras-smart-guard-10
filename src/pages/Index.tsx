@@ -1,16 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ModulesSection from "@/components/ModulesSection";
+import Footer from "@/components/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-dvh bg-background text-foreground overflow-hidden selection:bg-neon selection:text-primary-foreground">
+      {/* Background Grid */}
+      <div className="fixed inset-0 bg-[linear-gradient(to_right,hsl(var(--plating)/0.25)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--plating)/0.25)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none z-0" />
+
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection />
+        <ModulesSection />
+        <Footer />
+      </div>
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
