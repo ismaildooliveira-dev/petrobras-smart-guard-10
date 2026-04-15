@@ -15,7 +15,7 @@ const ModuleCard = ({ id, title, description, status, statusColor, metricLabel, 
     : "bg-gradient-to-r from-alert to-transparent";
 
   return (
-    <div className="bg-carbon p-10 hover:bg-secondary transition-colors duration-500 relative group flex flex-col justify-between min-h-[380px]">
+    <div className="bg-carbon p-8 sm:p-10 hover:bg-secondary transition-colors duration-500 relative group flex flex-col justify-between min-h-[320px] sm:min-h-[380px] min-w-[300px] md:min-w-0 snap-start">
       <div className={`absolute top-0 left-0 w-full h-[2px] ${topLineGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
       <div>
         <div className="font-mono-tactical text-[10px] text-muted-foreground mb-8 flex justify-between tracking-widest uppercase">
@@ -81,10 +81,16 @@ const ModulesSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border">
+        {/* Horizontally scrollable on mobile, grid on desktop */}
+        <div className="flex md:grid md:grid-cols-3 gap-px bg-border border border-border overflow-x-auto snap-x snap-mandatory scrollbar-hide">
           {modules.map((mod) => (
             <ModuleCard key={mod.id} {...mod} />
           ))}
+        </div>
+
+        {/* Scroll hint for mobile */}
+        <div className="md:hidden flex items-center justify-center gap-2 mt-4 font-mono-tactical text-[10px] text-muted-foreground/50 uppercase tracking-widest">
+          <span>← Arraste para ver mais →</span>
         </div>
       </div>
     </section>
