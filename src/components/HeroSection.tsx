@@ -6,21 +6,22 @@ const HeroSection = () => {
       {/* Text Column */}
       <div className="relative z-10 lg:col-span-5 flex flex-col gap-8">
         <div className="inline-flex items-center gap-3 px-3 py-1.5 border border-neon/30 bg-neon-dim text-neon text-[11px] font-mono-tactical w-max tracking-wide uppercase">
-          <span className="animate-pulse-neon">●</span> Telemetria ao vivo ativa
+          <span className="animate-pulse-neon">●</span> Monitoramento cibernético ativo
         </div>
 
         <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.05] tracking-tight text-balance">
-          Veja a instalação.
+          Detecte a ameaça.
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon to-green-400 text-neon-glow">
-            Proteja a operação.
+            Blindar os dados.
           </span>
         </h1>
 
         <p className="text-lg text-muted-foreground max-w-[45ch] leading-relaxed">
           Inteligência artificial exclusiva Petrobras para smart glasses.
-          Detecção de ameaças em tempo real com overlay termodinâmico e
-          diagnóstico estrutural diretamente no campo de visão do operador.
+          Prevenção de ataques digitais e vazamento de dados em tempo real
+          com análise de tráfego de rede e detecção de intrusões
+          diretamente no campo de visão do operador.
         </p>
 
         <div className="flex flex-wrap items-center gap-4 mt-4">
@@ -34,12 +35,12 @@ const HeroSection = () => {
 
         <div className="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-border font-mono-tactical text-xs">
           <div>
-            <div className="text-muted-foreground mb-1">Processamento</div>
-            <div className="text-foreground">A14 Bionic Edge</div>
+            <div className="text-muted-foreground mb-1">Criptografia</div>
+            <div className="text-foreground">AES-256 / ZK-Proof</div>
           </div>
           <div>
-            <div className="text-muted-foreground mb-1">Refresh Óptico</div>
-            <div className="text-foreground">120Hz Micro-OLED</div>
+            <div className="text-muted-foreground mb-1">Análise de Pacotes</div>
+            <div className="text-foreground">1.2M req/s Deep Inspect</div>
           </div>
         </div>
       </div>
@@ -61,11 +62,11 @@ const HeroSection = () => {
 
           {/* HUD: Targeting */}
           <div className="absolute top-8 left-8 border-l-2 border-neon pl-4 font-mono-tactical text-xs">
-            <div className="text-neon mb-1">ALVO_TRAVADO</div>
+            <div className="text-neon mb-1">AMEAÇA_DETECTADA</div>
             <div className="text-foreground text-lg font-bold tracking-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              VÁLVULA_XT-892
+              ENDPOINT_SRV-47
             </div>
-            <div className="text-muted-foreground mt-1">SETOR_04 // SUBSOLO</div>
+            <div className="text-muted-foreground mt-1">REDE_DMZ // FIREWALL_03</div>
           </div>
 
           {/* HUD: Reticle */}
@@ -79,19 +80,19 @@ const HeroSection = () => {
           {/* HUD: Telemetry */}
           <div className="absolute bottom-8 right-8 flex flex-col gap-2 font-mono-tactical text-[10px] text-muted-foreground text-right uppercase">
             <div className="flex justify-end gap-3">
-              <span>Variância Térmica</span>
-              <span className="text-alert">+42.4°C</span>
+              <span>Tentativas de Intrusão</span>
+              <span className="text-alert">+347 bloqueadas</span>
             </div>
             <div className="flex justify-end gap-3">
-              <span>Pressão Interna</span>
-              <span className="text-foreground">14.2 PSI</span>
+              <span>Vazamento de Dados</span>
+              <span className="text-foreground">0 detectados</span>
             </div>
             <div className="flex justify-end gap-3">
-              <span>Integridade Estrutural</span>
-              <span className="text-neon">98.9%</span>
+              <span>Integridade da Rede</span>
+              <span className="text-neon">99.7%</span>
             </div>
             <div className="mt-2 pt-2 border-t border-neon/30 text-neon">
-              Overlay Diagnóstico Ativo
+              Firewall Neural Ativo
             </div>
           </div>
         </div>
