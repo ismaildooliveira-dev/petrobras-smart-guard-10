@@ -18,10 +18,10 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-base sm:text-lg text-muted-foreground max-w-[45ch] leading-relaxed">
-          Inteligência artificial exclusiva Petrobras para smart glasses.
-          Prevenção de ataques digitais e vazamento de dados em tempo real
-          com análise de tráfego de rede e detecção de intrusões
-          diretamente no campo de visão do operador.
+          IA exclusiva Petrobras embarcada nos smart glasses: autenticação
+          biométrica multifator (íris + digital), validação contínua do
+          usuário e modelo Zero Trust. Prevenção de ataques em tempo real,
+          sem depender exclusivamente da nuvem.
         </p>
 
         <div className="flex flex-wrap items-center gap-4 mt-4">
